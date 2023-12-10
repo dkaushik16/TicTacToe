@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.body{
+    background-color: aqua;
+}
+
+.navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    background-color: navy;
+    color:white;
+    height: 7vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    top: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px blue;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.heading{
+    margin: 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.gameContainer{
+    display:grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Dhurjati', sans-serif;
+    box-shadow: 5px 5px 5px cadetblue;
+    position:relative;
+}
+
+.line{
+    background-color:navy;
+    height: 3px;
+    width:0;
+    position:absolute;
+    box-shadow: 1px 1px 10px navy;
+    transition:width 1s ease-in-out;
+}
+
+.box{
+    border:2px solid black;
+    font-size: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+.box:hover{
+    background-color:whitesmoke;
+}
+
+.gameInfo{
+    margin-left: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+.bl{
+    border-left:0;
+}
+.br{
+    border-right:0;
+}
+.bb{
+    border-bottom:0;
+}
+.bt{
+    border-top:0;
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    height:20vh;
+    
+}
+
+.info{
+    font-size:xx-large;
+
+}
+
+#reset{
+    border-radius: 5px;
+    padding:5px 5px 5px 5px;
+    font: bolder;
+    font-size:large;
+    background-color: navy;
+    color: white;
+    box-shadow: 5px 5px 10px navy;
+    cursor:pointer;
+}
+
